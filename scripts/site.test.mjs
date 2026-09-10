@@ -33,7 +33,7 @@ test("every public manual has an English source and Chinese translation", () => 
     assert.ok(Buffer.byteLength(body) > 500, `${name} must contain a usable guide`);
     assert.doesNotMatch(body, /\b(?:TODO|lorem ipsum|coming soon)\b/i);
     for (const [, path] of body.matchAll(
-      /https:\/\/github\.com\/yxflc11\/openbot\/blob\/main\/([^\s)]+)/g,
+      /https:\/\/github\.com\/yxflc11\/openbot\/blob\/(?:main|[a-f0-9]{40})\/([^\s)]+)/g,
     )) {
       assert.ok(existsSync(resolve(root, path)), `Broken canonical source: ${path}`);
     }

@@ -17,4 +17,4 @@ OpenBot 是把应用与可复用包放在一起的 monorepo。桌面客户端展
 
 模型输出、网页、文件、插件和工作节点都作为不可信输入。具备能力不等于获得权限，Bot 即使受另一位 Bot 委派也使用自己的身份；需要审批的操作仍需明确批准。
 
-扩展入口和验证命令见 [当前架构](https://github.com/yxflc11/openbot/blob/main/docs/ARCHITECTURE.zh-CN.md)、[仓库地图](https://github.com/yxflc11/openbot/blob/main/docs/REPOSITORY_MAP.zh-CN.md) 和 [工程审查](https://github.com/yxflc11/openbot/blob/main/docs/REPOSITORY_AUDIT.zh-CN.md)。办公室可视化仍是延期的可选插件，不属于本次协作运行核心。
+扩展入口和验证命令见 [当前架构](https://github.com/yxflc11/openbot/blob/53adb487af506ce7089d2252719175427282e0c1/docs/ARCHITECTURE.zh-CN.md)、[仓库地图](https://github.com/yxflc11/openbot/blob/53adb487af506ce7089d2252719175427282e0c1/docs/REPOSITORY_MAP.zh-CN.md) 和 [工程审查](https://github.com/yxflc11/openbot/blob/53adb487af506ce7089d2252719175427282e0c1/docs/REPOSITORY_AUDIT.zh-CN.md)。办公室可视化仍是延期的可选插件，不属于本次协作运行核心。

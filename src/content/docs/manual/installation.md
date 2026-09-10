@@ -22,4 +22,4 @@ An unsigned preview may produce a Windows trust prompt. OpenBot does not bypass 
 
 Normal launches reuse the saved installation, encrypted bootstrap identity, model settings and database. A short connection screen replaces the first-install checklist. Keep the same user profile and application data when upgrading. Quit the app before copying database files for a backup. Uninstalling the app does not erase workspace data.
 
-The desktop client can also connect to a separately hosted Server over its reviewed URL. Localhost always means the Server machine for tools and plugins. See the [Windows engineering contract](https://github.com/yxflc11/openbot/blob/main/docs/WINDOWS_DESKTOP.md) for platform evidence and packaging details.
+The desktop client can also connect to a separately hosted Server over its reviewed URL. Localhost always means the Server machine for tools and plugins. See the [Windows engineering contract](https://github.com/yxflc11/openbot/blob/53adb487af506ce7089d2252719175427282e0c1/docs/WINDOWS_DESKTOP.md) for platform evidence and packaging details.
