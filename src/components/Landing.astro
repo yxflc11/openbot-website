@@ -4,6 +4,7 @@ const { locale } = Astro.props;
 const zh = locale === "zh-cn";
 const base = `/openbot-website/${zh ? "zh-cn/" : ""}`;
 const github = "https://github.com/yxflc11/openbot";
+const releaseReady = false;
 const copy = zh
   ? {
       lang: "zh-CN",
@@ -13,7 +14,7 @@ const copy = zh
       heading: ["让 Bot 成为", "你的协作团队。"],
       intro: "在频道里分工、交流与交付。身份、记忆和权限，始终由你掌握。",
       download: "下载 Windows 版",
-      start: "开始使用",
+      start: "体验协作",
       features: [
         ["一起工作", "在同一个频道里，多位 Bot 各司其职，基于上下文协作完成任务。"],
         ["把成果带走", "文件可以下载，Bot 可以分享。让职责、外观和经过审核的技能一同交付。"],
@@ -42,7 +43,7 @@ const copy = zh
       intro:
         "Delegate, discuss, and deliver in a shared channel. You stay in control of identity, memory, and permissions.",
       download: "Download for Windows",
-      start: "Get started",
+      start: "Try the demo",
       features: [
         [
           "Work together",
@@ -110,11 +111,11 @@ const copy = zh
           <h1 id="hero-title">{copy.heading[0]}<br />{copy.heading[1]}</h1>
           <p>{copy.intro}</p>
           <div class="hero-actions">
-            <a class="button" href={`${github}/releases/tag/desktop-v0.1.0-alpha.6`}>{copy.download}</a>
-            <a class="text-link" href={`${base}manual/installation/`}>{copy.start} <span aria-hidden="true">→</span></a>
+            <a class="button" href={releaseReady ? `${github}/releases/tag/desktop-v0.1.0-alpha.6` : `${base}manual/installation/`}>{releaseReady ? copy.download : zh ? "Windows 安装指南" : "Windows installation"}</a>
+            <a class="text-link" href="#product-demo">{copy.start} <span aria-hidden="true">→</span></a>
           </div>
         </div>
-        <figure class="product-figure reveal">
+        <figure id="product-demo" class="product-figure reveal">
           <div class="product-frame">
             <iframe src="/openbot-website/demo/index.html?autoplay=1" title={zh ? "体验 OpenBot 频道协作" : "Try OpenBot channel collaboration"} loading="lazy" allow="clipboard-write; microphone 'none'; camera 'none'; geolocation 'none'"></iframe>
           </div>

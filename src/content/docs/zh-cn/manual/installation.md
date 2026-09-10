@@ -3,6 +3,9 @@ title: "安装 OpenBot"
 description: "安装 OpenBot — OpenBot"
 ---
 
+> alpha.6 Windows 安装包正在进行托管环境验证。请等对应正式发布记录包含 EXE 和校验值后再下载。
+
+
 OpenBot 桌面版可以在本机运行私人工作区，也可以连接已有的 OpenBot 服务电脑。本次新增适配以 Windows x64 为目标。模型需要单独配置；安装软件不会自动开始付费推理。
 
 ## Windows 安装

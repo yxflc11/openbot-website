@@ -3,6 +3,9 @@ title: "Install OpenBot"
 description: "Install OpenBot — OpenBot"
 ---
 
+> The alpha.6 Windows installer is undergoing hosted validation. Download it only once the matching published release includes the EXE and checksums.
+
+
 OpenBot Desktop runs a private workspace on your computer or connects to an existing OpenBot Server. This release adds the Windows x64 desktop path. A model provider is configured separately; installing the app does not start paid inference.
 
 ## Windows
