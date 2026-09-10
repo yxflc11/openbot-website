@@ -15,4 +15,4 @@ description: "分享 Bot 与下载成果 — OpenBot"
 
 私人记忆、聊天记录、API 密钥、提供方令牌、登录会话、实时频道成员关系和插件授权不会变成接收者的权限。接收方通过自己的导入审核流程激活 Bot，并自行配置模型和权限。这里分享的是 Bot，不会把对话改成通用任务模板。
 
-包格式、内容绑定和验证边界见 [员工可移植契约](https://github.com/yxflc11/openbot/blob/c67308ca8cb0aa99f8a2585181cf90ab6c8fa258/docs/EMPLOYEE.md)。
+包格式、内容绑定和验证边界见 [员工可移植契约](https://github.com/yxflc11/openbot/blob/d75a05272200492276713ddfe0e11325918358b4/docs/EMPLOYEE.md)。

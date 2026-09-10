@@ -3,7 +3,7 @@ title: "Install OpenBot"
 description: "Install OpenBot — OpenBot"
 ---
 
-> The alpha.6 Windows installer is undergoing hosted validation. Download it only once the matching published release includes the EXE and checksums.
+> Download the [Windows x64 alpha.6 preview](https://github.com/yxflc11/openbot/releases/tag/desktop-v0.1.0-alpha.6) and verify its SHA256SUMS. This is an unsigned development installer; Windows trust prompts remain in place.
 
 
 OpenBot Desktop runs a private workspace on your computer or connects to an existing OpenBot Server. This release adds the Windows x64 desktop path. A model provider is configured separately; installing the app does not start paid inference.
@@ -22,4 +22,4 @@ An unsigned preview may produce a Windows trust prompt. OpenBot does not bypass 
 
 Normal launches reuse the saved installation, encrypted bootstrap identity, model settings and database. A short connection screen replaces the first-install checklist. Keep the same user profile and application data when upgrading. Quit the app before copying database files for a backup. Uninstalling the app does not erase workspace data.
 
-The desktop client can also connect to a separately hosted Server over its reviewed URL. Localhost always means the Server machine for tools and plugins. See the [Windows engineering contract](https://github.com/yxflc11/openbot/blob/c67308ca8cb0aa99f8a2585181cf90ab6c8fa258/docs/WINDOWS_DESKTOP.md) for platform evidence and packaging details.
+The desktop client can also connect to a separately hosted Server over its reviewed URL. Localhost always means the Server machine for tools and plugins. See the [Windows engineering contract](https://github.com/yxflc11/openbot/blob/d75a05272200492276713ddfe0e11325918358b4/docs/WINDOWS_DESKTOP.md) for platform evidence and packaging details.

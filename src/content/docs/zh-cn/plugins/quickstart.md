@@ -28,4 +28,4 @@ OPENBOT_PLUGIN_LOCAL_ENDPOINTS=http://127.0.0.1:4318/mcp
 
 使用所选语言的官方 SDK。把查询与写操作拆开，在服务端验证参数，凭据放在连接配置中，描述准确的副作用，返回有边界的结果。除了成功用例，还要测试拒绝、超时、撤销与重复调用。
 
-参考 [示例源码](https://github.com/yxflc11/openbot/blob/c67308ca8cb0aa99f8a2585181cf90ab6c8fa258/apps/server/src/plugin-example.ts) 和 [MCP 文档](https://modelcontextprotocol.io/docs/getting-started/intro)。示例是开发服务，不是公开托管的在线端点。
+参考 [示例源码](https://github.com/yxflc11/openbot/blob/d75a05272200492276713ddfe0e11325918358b4/apps/server/src/plugin-example.ts) 和 [MCP 文档](https://modelcontextprotocol.io/docs/getting-started/intro)。示例是开发服务，不是公开托管的在线端点。

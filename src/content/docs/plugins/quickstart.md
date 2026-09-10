@@ -28,4 +28,4 @@ Open Plugins, preview the endpoint, and install it. Grant `sum_numbers` as read 
 
 Use the official SDK in your preferred language. Separate observational and mutating operations, validate inputs in your own service, keep credentials in the connection rather than prompts, and describe actual effects. Return small, bounded results. Add rejection, timeout, revocation and duplicate-call tests—not just a successful response.
 
-See [example source](https://github.com/yxflc11/openbot/blob/c67308ca8cb0aa99f8a2585181cf90ab6c8fa258/apps/server/src/plugin-example.ts) and [MCP documentation](https://modelcontextprotocol.io/docs/getting-started/intro). The example is a development service, not a public hosted endpoint.
+See [example source](https://github.com/yxflc11/openbot/blob/d75a05272200492276713ddfe0e11325918358b4/apps/server/src/plugin-example.ts) and [MCP documentation](https://modelcontextprotocol.io/docs/getting-started/intro). The example is a development service, not a public hosted endpoint.

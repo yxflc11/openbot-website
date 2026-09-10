@@ -9,4 +9,4 @@ description: "经审核的插件目录 — OpenBot"
 
 连接前检查源码、精确版本、许可证、传输方式、认证和真实作用，再预览在线声明，只向需要的 Bot 分配必要权限。即使出现在目录里，Server 仍会校验实际端点和声明。
 
-查看 [机器可读目录](https://github.com/yxflc11/openbot/blob/c67308ca8cb0aa99f8a2585181cf90ab6c8fa258/plugins/catalog.json) 与 [插件文件夹](https://github.com/yxflc11/openbot/tree/c67308ca8cb0aa99f8a2585181cf90ab6c8fa258/plugins)。新集成通过审核后的 Pull Request 加入，不会因社区上传而立即获得执行权限。
+查看 [机器可读目录](https://github.com/yxflc11/openbot/blob/d75a05272200492276713ddfe0e11325918358b4/plugins/catalog.json) 与 [插件文件夹](https://github.com/yxflc11/openbot/tree/d75a05272200492276713ddfe0e11325918358b4/plugins)。新集成通过审核后的 Pull Request 加入，不会因社区上传而立即获得执行权限。

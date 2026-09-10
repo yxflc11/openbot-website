@@ -15,4 +15,4 @@ Select the Bot to share and inspect the export preview. It describes the reusabl
 
 Private memory, transcripts, API keys, provider tokens, sessions, live channel memberships and plugin grants do not become a recipient's authority. An imported Bot is inspected and activated through the receiving workspace's review flow. The recipient chooses its own model and permissions. This feature does not convert the conversation into a new generic task template.
 
-For the package format, evidence binding, dependency closure and verification boundary, see the [portable Employee contract](https://github.com/yxflc11/openbot/blob/c67308ca8cb0aa99f8a2585181cf90ab6c8fa258/docs/EMPLOYEE.md).
+For the package format, evidence binding, dependency closure and verification boundary, see the [portable Employee contract](https://github.com/yxflc11/openbot/blob/d75a05272200492276713ddfe0e11325918358b4/docs/EMPLOYEE.md).
