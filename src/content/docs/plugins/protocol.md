@@ -19,4 +19,4 @@ Preview the endpoint and declarations, then install, assign grants and enable. N
 
 There are deliberate limits: no stdio subprocess execution, OAuth flow, sampling, roots, resource subscriptions, URI templates or autonomous prompt insertion. App tool calls, host messages and model-context access are not advertised. Remote services remain responsible for their own effects and security.
 
-The [canonical protocol contract](https://github.com/yxflc11/openbot/blob/53adb487af506ce7089d2252719175427282e0c1/docs/PLUGINS.md) specifies endpoints, limits, schemas, errors, trust boundaries and exact versions. Read it before implementing a public connector.
+The [canonical protocol contract](https://github.com/yxflc11/openbot/blob/c67308ca8cb0aa99f8a2585181cf90ab6c8fa258/docs/PLUGINS.md) specifies endpoints, limits, schemas, errors, trust boundaries and exact versions. Read it before implementing a public connector.

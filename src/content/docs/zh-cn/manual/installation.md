@@ -22,4 +22,4 @@ OpenBot 桌面版可以在本机运行私人工作区，也可以连接已有的
 
 日常启动复用已有安装、加密身份、模型设置和数据库，仅显示简短连接状态。首次安装的检查清单不会反复出现。升级时保留原用户目录；手动备份数据库前先退出 OpenBot。卸载应用不等于删除工作区数据。
 
-也可连接独立部署的 Server。插件中的 localhost 始终指服务电脑，不一定是当前客户端。详细平台证据见 [Windows 说明](https://github.com/yxflc11/openbot/blob/53adb487af506ce7089d2252719175427282e0c1/docs/WINDOWS_DESKTOP.zh-CN.md)。
+也可连接独立部署的 Server。插件中的 localhost 始终指服务电脑，不一定是当前客户端。详细平台证据见 [Windows 说明](https://github.com/yxflc11/openbot/blob/c67308ca8cb0aa99f8a2585181cf90ab6c8fa258/docs/WINDOWS_DESKTOP.zh-CN.md)。
