@@ -1,0 +1,24 @@
+{
+  "name": "openbot-website",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "license": "MIT",
+  "scripts": {
+    "dev": "node scripts/astro.mjs dev --host 127.0.0.1",
+    "build": "node scripts/astro.mjs build",
+    "preview": "node scripts/astro.mjs preview --host 127.0.0.1",
+    "typecheck": "node scripts/astro.mjs sync",
+    "test": "node --test scripts/site.test.mjs",
+    "prepare:demo": "node scripts/prepare-demo.mjs",
+    "check": "npm run test && npm run typecheck && npm run build"
+  },
+  "dependencies": {
+    "@astrojs/starlight": "0.42.0",
+    "astro": "7.2.10"
+  },
+  "packageManager": "npm@10.9.9",
+  "engines": {
+    "node": "^22.22.2 || ^24.15.0 || >=26.0.0"
+  }
+}
