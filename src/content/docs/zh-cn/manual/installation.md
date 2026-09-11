@@ -30,4 +30,6 @@ OpenBot 桌面版可以在本机运行私人工作区，也可以连接已有的
 
 日常启动复用已有安装、加密身份、模型设置和数据库，仅显示简短连接状态。首次安装的检查清单不会反复出现。升级时保留原用户目录；手动备份数据库前先退出 OpenBot。卸载应用不等于删除工作区数据。
 
+macOS 首次打开应用或替换未签名预览包时，可能要求访问登录钥匙串。请在 macOS 系统窗口处理；这里需要的是钥匙串密码，不是模型 API 密钥，已有模型设置仍保存在工作区中。日常重启验证通过，不代表换成另一个未签名应用包后也不会提示。系统授权选项见 [Apple 的钥匙串访问说明](https://support.apple.com/en-ie/guide/keychain-access/kyca1243/mac)。
+
 也可连接独立部署的 Server。插件中的 localhost 始终指服务电脑，不一定是当前客户端。详细平台证据见 [Windows 说明](https://github.com/yxflc11/openbot/blob/4289027cfa24d812f8977ca7a16b18e7ae4dbe55/docs/WINDOWS_DESKTOP.zh-CN.md)。
