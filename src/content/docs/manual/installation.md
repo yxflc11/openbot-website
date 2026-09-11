@@ -30,4 +30,6 @@ An unsigned preview may produce a Windows trust prompt. OpenBot does not bypass 
 
 Normal launches reuse the saved installation, encrypted bootstrap identity, model settings and database. A short connection screen replaces the first-install checklist. Keep the same user profile and application data when upgrading. Quit the app before copying database files for a backup. Uninstalling the app does not erase workspace data.
 
+On macOS, opening the app for the first time or replacing an unsigned preview may prompt for access to the login keychain. Complete that request in the macOS system dialog; it asks for the keychain password, not your model API key. Saved model settings remain in the workspace. Normal restart verification does not guarantee that a different unsigned application build will avoid this prompt. See [Apple’s explanation of keychain access requests](https://support.apple.com/en-ie/guide/keychain-access/kyca1243/mac).
+
 The desktop client can also connect to a separately hosted Server over its reviewed URL. Localhost always means the Server machine for tools and plugins. See the [Windows engineering contract](https://github.com/yxflc11/openbot/blob/4289027cfa24d812f8977ca7a16b18e7ae4dbe55/docs/WINDOWS_DESKTOP.md) for platform evidence and packaging details.
