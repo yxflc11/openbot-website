@@ -3,10 +3,18 @@ title: "安装 OpenBot"
 description: "安装 OpenBot — OpenBot"
 ---
 
-> 下载 [Windows x64 alpha.6 预览版](https://github.com/yxflc11/openbot/releases/tag/desktop-v0.1.0-alpha.6)，并核对随附的 SHA256SUMS。安装器尚未签名，保留 Windows 系统信任提示。
+> 下载 [macOS / Windows alpha.6 预览版](https://github.com/yxflc11/openbot/releases/tag/desktop-v0.1.0-alpha.6)，并核对随附的 SHA256SUMS。安装器尚未签名，macOS 包尚未公证，保留系统信任提示。
 
 
-OpenBot 桌面版可以在本机运行私人工作区，也可以连接已有的 OpenBot 服务电脑。本次新增适配以 Windows x64 为目标。模型需要单独配置；安装软件不会自动开始付费推理。
+OpenBot 桌面版可以在本机运行私人工作区，也可以连接已有的 OpenBot 服务电脑。macOS Apple Silicon 和 Windows x64 均包含本地 Server 与数据库。模型需要单独配置；安装软件不会自动开始付费推理。
+
+## macOS 安装
+
+1. 下载 alpha.6 的 [Apple Silicon DMG](https://github.com/yxflc11/openbot/releases/download/desktop-v0.1.0-alpha.6/openbot-desktop-0.1.0-alpha.6-darwin-arm64.dmg)，核对发布页的 SHA256SUMS。
+2. 打开 DMG，将 OpenBot 拖入 Applications。升级前先退出 OpenBot 并备份工作区；不要删除原用户数据目录。
+3. 打开 OpenBot，选择“作为服务电脑”或连接已有服务，再到设置中保存模型提供方、API 密钥和模型，明确启用 Agent。
+
+当前包仅适用于 Apple Silicon，不包含 Intel 版。应用采用 ad-hoc 签名，尚未获得 Developer ID 签名和 Apple 公证；系统可能要求在“系统设置 → 隐私与安全性”中确认打开。仅在确认下载来源后按系统提供的流程处理，应用不绕过 Gatekeeper 或组织策略。相关操作见 [Apple 对系统信任提示的说明](https://support.apple.com/en-us/102445)。
 
 ## Windows 安装
 
@@ -22,4 +30,4 @@ OpenBot 桌面版可以在本机运行私人工作区，也可以连接已有的
 
 日常启动复用已有安装、加密身份、模型设置和数据库，仅显示简短连接状态。首次安装的检查清单不会反复出现。升级时保留原用户目录；手动备份数据库前先退出 OpenBot。卸载应用不等于删除工作区数据。
 
-也可连接独立部署的 Server。插件中的 localhost 始终指服务电脑，不一定是当前客户端。详细平台证据见 [Windows 说明](https://github.com/yxflc11/openbot/blob/d75a05272200492276713ddfe0e11325918358b4/docs/WINDOWS_DESKTOP.zh-CN.md)。
+也可连接独立部署的 Server。插件中的 localhost 始终指服务电脑，不一定是当前客户端。详细平台证据见 [Windows 说明](https://github.com/yxflc11/openbot/blob/4872993b8394073c855e5ad4929aca7707d01d5f/docs/WINDOWS_DESKTOP.zh-CN.md)。

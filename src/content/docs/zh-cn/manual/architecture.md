@@ -13,8 +13,8 @@ OpenBot 是把应用与可复用包放在一起的 monorepo。桌面客户端展
 | `packages/domain`、`packages/protocol` | 共享类型与边界验证 |
 | `packages/db` | 数据库结构与有序迁移 |
 | Worker Host 与 `providers` | 单独注册、有范围的执行能力，不成为第二套权限中心 |
-| `apps/site` | 产品官网和双语使用手册 |
+| [openbot-website](https://github.com/yxflc11/openbot-website) | 独立产品官网、双语使用手册和演示 |
 
 模型输出、网页、文件、插件和工作节点都作为不可信输入。具备能力不等于获得权限，Bot 即使受另一位 Bot 委派也使用自己的身份；需要审批的操作仍需明确批准。
 
-扩展入口和验证命令见 [当前架构](https://github.com/yxflc11/openbot/blob/d75a05272200492276713ddfe0e11325918358b4/docs/ARCHITECTURE.zh-CN.md)、[仓库地图](https://github.com/yxflc11/openbot/blob/d75a05272200492276713ddfe0e11325918358b4/docs/REPOSITORY_MAP.zh-CN.md) 和 [工程审查](https://github.com/yxflc11/openbot/blob/d75a05272200492276713ddfe0e11325918358b4/docs/REPOSITORY_AUDIT.zh-CN.md)。办公室可视化仍是延期的可选插件，不属于本次协作运行核心。
+扩展入口和验证命令见 [当前架构](https://github.com/yxflc11/openbot/blob/4872993b8394073c855e5ad4929aca7707d01d5f/docs/ARCHITECTURE.zh-CN.md)和[仓库地图](https://github.com/yxflc11/openbot/blob/4872993b8394073c855e5ad4929aca7707d01d5f/docs/REPOSITORY_MAP.zh-CN.md)。办公室可视化仍是延期的可选插件，不属于本次协作运行核心。

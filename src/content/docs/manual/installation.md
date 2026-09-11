@@ -3,10 +3,18 @@ title: "Install OpenBot"
 description: "Install OpenBot — OpenBot"
 ---
 
-> Download the [Windows x64 alpha.6 preview](https://github.com/yxflc11/openbot/releases/tag/desktop-v0.1.0-alpha.6) and verify its SHA256SUMS. This is an unsigned development installer; Windows trust prompts remain in place.
+> Download the [macOS / Windows alpha.6 preview](https://github.com/yxflc11/openbot/releases/tag/desktop-v0.1.0-alpha.6) and verify its SHA256SUMS. This is an unsigned development installer; macOS is not notarized and system trust prompts remain in place.
 
 
-OpenBot Desktop runs a private workspace on your computer or connects to an existing OpenBot Server. This release adds the Windows x64 desktop path. A model provider is configured separately; installing the app does not start paid inference.
+OpenBot Desktop runs a private workspace on your computer or connects to an existing OpenBot Server. macOS Apple Silicon and Windows x64 both include a local Server and database. A model provider is configured separately; installing the app does not start paid inference.
+
+## macOS installation
+
+1. Download the alpha.6 [Apple Silicon DMG](https://github.com/yxflc11/openbot/releases/download/desktop-v0.1.0-alpha.6/openbot-desktop-0.1.0-alpha.6-darwin-arm64.dmg) and check the release's SHA256SUMS.
+2. Open the DMG and drag OpenBot into Applications. Quit OpenBot and back up your workspace before upgrading; retain the existing user data directory.
+3. Open OpenBot, create a local workspace or connect to an existing Server, then save your model provider, API key and model in Settings and enable the Agent.
+
+This package supports Apple Silicon, not Intel Macs. It is ad-hoc signed, without Developer ID signing or Apple notarization; macOS may require confirmation in System Settings → Privacy & Security. Follow the system-provided process only after verifying the download source. OpenBot does not bypass Gatekeeper or organizational policy. See [Apple’s explanation of system trust prompts](https://support.apple.com/en-us/102445).
 
 ## Windows
 
@@ -22,4 +30,4 @@ An unsigned preview may produce a Windows trust prompt. OpenBot does not bypass 
 
 Normal launches reuse the saved installation, encrypted bootstrap identity, model settings and database. A short connection screen replaces the first-install checklist. Keep the same user profile and application data when upgrading. Quit the app before copying database files for a backup. Uninstalling the app does not erase workspace data.
 
-The desktop client can also connect to a separately hosted Server over its reviewed URL. Localhost always means the Server machine for tools and plugins. See the [Windows engineering contract](https://github.com/yxflc11/openbot/blob/d75a05272200492276713ddfe0e11325918358b4/docs/WINDOWS_DESKTOP.md) for platform evidence and packaging details.
+The desktop client can also connect to a separately hosted Server over its reviewed URL. Localhost always means the Server machine for tools and plugins. See the [Windows engineering contract](https://github.com/yxflc11/openbot/blob/4872993b8394073c855e5ad4929aca7707d01d5f/docs/WINDOWS_DESKTOP.md) for platform evidence and packaging details.

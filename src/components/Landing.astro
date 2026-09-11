@@ -13,7 +13,7 @@ const copy = zh
       plugins: "插件开发",
       heading: ["让 Bot 成为", "你的协作团队。"],
       intro: "在频道里分工、交流与交付。身份、记忆和权限，始终由你掌握。",
-      download: "下载 Windows 版",
+      download: "下载 macOS / Windows 版",
       start: "体验协作",
       features: [
         ["一起工作", "在同一个频道里，多位 Bot 各司其职，基于上下文协作完成任务。"],
@@ -42,7 +42,7 @@ const copy = zh
       heading: ["Your Bots.", "One working team."],
       intro:
         "Delegate, discuss, and deliver in a shared channel. You stay in control of identity, memory, and permissions.",
-      download: "Download for Windows",
+      download: "Download for macOS / Windows",
       start: "Try the demo",
       features: [
         [
@@ -111,7 +111,7 @@ const copy = zh
           <h1 id="hero-title">{copy.heading[0]}<br />{copy.heading[1]}</h1>
           <p>{copy.intro}</p>
           <div class="hero-actions">
-            <a class="button" href={releaseReady ? `${github}/releases/tag/desktop-v0.1.0-alpha.6` : `${base}manual/installation/`}>{releaseReady ? copy.download : zh ? "Windows 安装指南" : "Windows installation"}</a>
+            <a class="button" href={releaseReady ? `${github}/releases/tag/desktop-v0.1.0-alpha.6` : `${base}manual/installation/`}>{releaseReady ? copy.download : zh ? "安装指南" : "Installation guide"}</a>
             <a class="text-link" href="#product-demo">{copy.start} <span aria-hidden="true">→</span></a>
           </div>
         </div>
