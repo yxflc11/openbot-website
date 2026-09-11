@@ -25,6 +25,6 @@ npm run dev
 - `src/styles`: product and documentation styling.
 - `scripts`: pinned demo preparation and route/content validation.
 - `.github/workflows/site.yml`: build and GitHub Pages deployment.
-- `vercel.json`: the connected Vercel preview uses the same pinned demo preparation and validated static build. It preserves the `/openbot-website/` URL prefix through a static rewrite; it adds no server runtime. Configuration follows the [Vercel static configuration contract](https://vercel.com/docs/project-configuration/vercel-json).
+- `vercel.json`: the connected Vercel preview uses the same pinned demo preparation and validated static build. `scripts/prepare-vercel.mjs` places that build under its canonical `/openbot-website/` directory; it adds no server runtime. Configuration follows the [Vercel static configuration contract](https://vercel.com/docs/project-configuration/vercel-json).
 
 The website has no Owner session, backend, keys, model calls or plugin-installation authority. Canonical protocol/architecture documents and reviewed plugin metadata remain in OpenBot. Deploy target: https://yxflc11.github.io/openbot-website/ (Chinese: `/zh-cn/`). MIT licensed; upstream framework notices remain with dependencies and OpenBot owns the reused product code.
