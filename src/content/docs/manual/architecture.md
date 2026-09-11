@@ -17,4 +17,4 @@ OpenBot is a monorepo with separate applications and reusable packages. The desk
 
 Model output, webpages, files, plugins and workers are untrusted inputs. A capability does not confer permission. A Bot runs under its own identity, including when another Bot asks it for help. Explicit approval is still needed for operations requiring it.
 
-Use the [current architecture](https://github.com/yxflc11/openbot/blob/4872993b8394073c855e5ad4929aca7707d01d5f/docs/ARCHITECTURE.md) and [repository map](https://github.com/yxflc11/openbot/blob/4872993b8394073c855e5ad4929aca7707d01d5f/docs/REPOSITORY_MAP.md) to find extension points and verification commands. The optional office visualization remains deferred; it is not part of the collaboration runtime.
+Use the [current architecture](https://github.com/yxflc11/openbot/blob/4289027cfa24d812f8977ca7a16b18e7ae4dbe55/docs/ARCHITECTURE.md) and [repository map](https://github.com/yxflc11/openbot/blob/4289027cfa24d812f8977ca7a16b18e7ae4dbe55/docs/REPOSITORY_MAP.md) to find extension points and verification commands. The optional office visualization remains deferred; it is not part of the collaboration runtime.

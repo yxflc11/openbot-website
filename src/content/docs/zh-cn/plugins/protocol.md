@@ -19,4 +19,4 @@ description: "插件协议 — OpenBot"
 
 当前不提供 stdio 子进程、OAuth 流程、sampling、roots、资源订阅、URI 模板或自动插入提示词。Apps 不开放工具调用、宿主消息和模型上下文能力。远端服务仍需为自身行为和安全负责。
 
-开发前请阅读 [完整协议契约](https://github.com/yxflc11/openbot/blob/4872993b8394073c855e5ad4929aca7707d01d5f/docs/PLUGINS.zh-CN.md)，其中包含 API、参数、大小限制、错误、边界和精确版本。
+开发前请阅读 [完整协议契约](https://github.com/yxflc11/openbot/blob/4289027cfa24d812f8977ca7a16b18e7ae4dbe55/docs/PLUGINS.zh-CN.md)，其中包含 API、参数、大小限制、错误、边界和精确版本。

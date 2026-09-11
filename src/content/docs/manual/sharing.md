@@ -17,4 +17,4 @@ When permitted by its license, an export can include the reviewed contents of a 
 
 Private memory, transcripts, API keys, provider tokens, sessions, live channel memberships and plugin grants do not become a recipient's authority. An imported Bot is inspected and activated through the receiving workspace's review flow. The recipient chooses its own model and permissions.
 
-For the package format, evidence binding, dependency closure and verification boundary, see the [portable Employee contract](https://github.com/yxflc11/openbot/blob/4872993b8394073c855e5ad4929aca7707d01d5f/docs/EMPLOYEE.md).
+For the package format, evidence binding, dependency closure and verification boundary, see the [portable Employee contract](https://github.com/yxflc11/openbot/blob/4289027cfa24d812f8977ca7a16b18e7ae4dbe55/docs/EMPLOYEE.md).
