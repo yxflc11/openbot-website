@@ -25,5 +25,6 @@ npm run dev
 - `src/styles`：官网和文档样式。
 - `scripts`：固定版本的演示构建、内容与链接验证。
 - `.github/workflows/site.yml`：构建与 GitHub Pages 部署。
+- `vercel.json`：已连接的 Vercel 预览同样先构建固定版本的产品演示，再验证静态网站。通过静态重写保留 `/openbot-website/` 路径，不添加服务端运行环境。配置依据 [Vercel 静态配置契约](https://vercel.com/docs/project-configuration/vercel-json)。
 
 官网没有 Owner 会话、后端、密钥、模型调用或插件安装权限。协议、架构等权威技术文档和插件目录仍由 OpenBot 维护。目标地址为 https://yxflc11.github.io/openbot-website/ ，中文位于 `/zh-cn/`。MIT 授权，上游声明随依赖保留。
