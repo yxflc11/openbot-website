@@ -5,7 +5,20 @@ description: "开发第一个插件 — OpenBot"
 
 仓库内提供真实 MCP 示例，包含读写工具、资源、提示词和交互视图。不需要外部账户，示例笔记保存在进程内存。
 
-## 运行示例
+## 创建独立项目
+
+在 OpenBot 源码目录，将插件生成到尚不存在的目标目录：
+
+```sh
+npm run plugin:create -- ../my-openbot-plugin
+cd ../my-openbot-plugin
+npm install
+npm start
+```
+
+生成结果包含自己的依赖清单、README、MIT 许可和 MCP 示例，运行时不依赖 OpenBot monorepo。已有目录不会被覆盖；你可以放入自己的仓库维护和发布。
+
+## 运行仓库中的示例
 
 在源码目录使用 Node 22.22.2、npm 10.9.9 安装锁定依赖：
 

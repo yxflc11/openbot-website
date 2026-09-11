@@ -5,7 +5,20 @@ description: "Build your first plugin — OpenBot"
 
 The repository includes a real MCP example with read and write tools, a resource, a prompt and an interactive view. It uses no external account and stores its demonstration notes in memory.
 
-## Run the example
+## Create an independent project
+
+From an OpenBot source checkout, generate a new project in an empty destination:
+
+```sh
+npm run plugin:create -- ../my-openbot-plugin
+cd ../my-openbot-plugin
+npm install
+npm start
+```
+
+The generated project includes its own package manifest, README, MIT license and MCP example. It runs independently of the OpenBot monorepo and refuses to overwrite an existing destination. You can maintain and publish it in your own repository.
+
+## Run the repository example
 
 From the source checkout, install the locked dependencies with Node 22.22.2 and npm 10.9.9:
 
