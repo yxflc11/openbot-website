@@ -15,6 +15,10 @@ Add files from the composer, by dropping them onto it, or by pasting an image. U
 
 Open **Attachment actions** to extract, recognize or transcribe before sending a task that needs the contents. Derived text is bound to the original file's digest. Extraction has time, memory and output limits; a truncated result is labeled. Macros, arbitrary embedded files and active document code are not executed. Scanned PDFs do not automatically receive OCR; export a page as PNG/JPEG to recognize it.
 
+## Cancel or retry an upload
+
+During an upload, choose **Cancel upload** to stop pending files. Files that finished uploading remain in the draft. If some files fail, retry the failed files without uploading successful ones again. A cancelled voice upload retains its recording preview so you can retry or discard it.
+
 ## Record a voice attachment
 
 Click the microphone, allow microphone access, record, then stop. The recording is limited to five minutes and 10 MiB. Listen before choosing **Add to draft**, or discard it. Leaving the channel stops microphone tracks. Recording does not automatically transmit audio to a model. To transcribe, explicitly choose the attachment's transcription action; this sends the selected media to your enabled OpenAI provider.

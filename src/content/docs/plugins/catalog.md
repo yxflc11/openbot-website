@@ -9,4 +9,4 @@ The initial catalog includes the repository's local MCP example. It demonstrates
 
 Inspect the source, exact revision, license, transport, authentication and real effects before connecting. Preview the live declaration and grant only the operations needed by a specific Bot. The Server checks the actual endpoint and declaration even when an integration appears in this directory.
 
-Browse the [machine-readable catalog](https://github.com/yxflc11/openbot/blob/4872993b8394073c855e5ad4929aca7707d01d5f/plugins/catalog.json) and [plugin directory](https://github.com/yxflc11/openbot/tree/4872993b8394073c855e5ad4929aca7707d01d5f/plugins). New integrations enter through a reviewed pull request. There is no unreviewed community upload that immediately gains execution privileges.
+Browse the [machine-readable catalog](https://github.com/yxflc11/openbot/blob/4289027cfa24d812f8977ca7a16b18e7ae4dbe55/plugins/catalog.json) and [plugin directory](https://github.com/yxflc11/openbot/tree/4289027cfa24d812f8977ca7a16b18e7ae4dbe55/plugins). New integrations enter through a reviewed pull request. There is no unreviewed community upload that immediately gains execution privileges.

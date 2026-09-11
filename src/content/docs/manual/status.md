@@ -22,6 +22,7 @@ This page maps the intended workflow to the current implementation. Release bina
 | Plugin catalog | Reviewed metadata and contribution process | A listing never auto-grants access |
 | Automations | Scheduled tasks through the same Server boundary | Server must remain running |
 | Settings | Retained model credentials and workspace preferences | OS storage/signing constraints still apply |
+| macOS Desktop | Local Server or remote client, DMG installation | Apple silicon; unsigned builds may require Keychain approval again after an update |
 | Windows Desktop | Local Server or remote client, per-user installer | x64 target; native evidence belongs to its CI run |
 | Website | English/Chinese manuals, search, protocol and contribution entry | Static site; no workspace secrets or hosted model account |
 

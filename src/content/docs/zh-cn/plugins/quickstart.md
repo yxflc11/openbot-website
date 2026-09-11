@@ -5,7 +5,20 @@ description: "开发第一个插件 — OpenBot"
 
 仓库内提供真实 MCP 示例，包含读写工具、资源、提示词和交互视图。不需要外部账户，示例笔记保存在进程内存。
 
-## 运行示例
+## 创建独立项目
+
+在 OpenBot 源码目录，将插件生成到尚不存在的目标目录：
+
+```sh
+npm run plugin:create -- ../my-openbot-plugin
+cd ../my-openbot-plugin
+npm install
+npm start
+```
+
+生成结果包含自己的依赖清单、README、MIT 许可和 MCP 示例，运行时不依赖 OpenBot monorepo。已有目录不会被覆盖；你可以放入自己的仓库维护和发布。
+
+## 运行仓库中的示例
 
 在源码目录使用 Node 22.22.2、npm 10.9.9 安装锁定依赖：
 
@@ -28,4 +41,4 @@ OPENBOT_PLUGIN_LOCAL_ENDPOINTS=http://127.0.0.1:4318/mcp
 
 使用所选语言的官方 SDK。把查询与写操作拆开，在服务端验证参数，凭据放在连接配置中，描述准确的副作用，返回有边界的结果。除了成功用例，还要测试拒绝、超时、撤销与重复调用。
 
-参考 [示例源码](https://github.com/yxflc11/openbot/blob/4872993b8394073c855e5ad4929aca7707d01d5f/apps/server/src/plugin-example.ts) 和 [MCP 文档](https://modelcontextprotocol.io/docs/getting-started/intro)。示例是开发服务，不是公开托管的在线端点。
+参考 [示例源码](https://github.com/yxflc11/openbot/blob/4289027cfa24d812f8977ca7a16b18e7ae4dbe55/apps/server/src/plugin-example.ts) 和 [MCP 文档](https://modelcontextprotocol.io/docs/getting-started/intro)。示例是开发服务，不是公开托管的在线端点。

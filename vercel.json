@@ -1,0 +1,10 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "framework": null,
+  "installCommand": "npm ci",
+  "buildCommand": "npm run prepare:demo && npm run check && node scripts/prepare-vercel.mjs",
+  "outputDirectory": ".vercel-static",
+  "redirects": [
+    { "source": "/", "destination": "/openbot-website/", "permanent": false }
+  ]
+}

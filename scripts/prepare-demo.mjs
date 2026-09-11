@@ -14,7 +14,12 @@ function run(command, args, cwd = root) {
   if (result.status !== 0) throw new Error(`${command} failed (${result.status}).`);
 }
 mkdirSync(resolve(root, ".cache"), { recursive: true });
-if (!existsSync(resolve(checkout, ".git"))) run("git", ["clone", "--filter=blob:none", "--no-checkout", source.repository, checkout]);
+if (!existsSync(resolve(checkout, ".git"))) {
+  // Hosting caches can restore generated files while omitting Git metadata.
+  // This directory is exclusively the disposable, pinned product checkout.
+  rmSync(checkout, { recursive: true, force: true });
+  run("git", ["clone", "--filter=blob:none", "--no-checkout", source.repository, checkout]);
+}
 run("git", ["fetch", "--depth=1", "origin", source.commit], checkout);
 run("git", ["checkout", "--detach", source.commit], checkout);
 const npm = process.env.npm_execpath;
