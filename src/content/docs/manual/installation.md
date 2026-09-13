@@ -3,14 +3,16 @@ title: "Install OpenBot"
 description: "Install OpenBot — OpenBot"
 ---
 
-> Download the [macOS / Windows alpha.7 preview](https://github.com/yxflc11/openbot/releases/tag/desktop-v0.1.0-alpha.7) and verify its SHA256SUMS. This is an unsigned development installer; macOS is not notarized and system trust prompts remain in place.
+> Download the [macOS / Windows alpha.8 preview](https://github.com/yxflc11/openbot/releases/tag/desktop-v0.1.0-alpha.8) and verify its SHA256SUMS. This is an unsigned development installer; macOS is not notarized and system trust prompts remain in place.
 
 
 OpenBot Desktop runs a private workspace on your computer or connects to an existing OpenBot Server. macOS Apple Silicon and Windows x64 both include a local Server and database. A model provider is configured separately; installing the app does not start paid inference.
 
+The versioned [desktop-manifest.json](https://github.com/yxflc11/openbot/releases/download/desktop-v0.1.0-alpha.8/desktop-manifest.json) records the installer source commit and packaged platform files. Check your download’s filename and SHA-256 against the same release’s [SHA256SUMS](https://github.com/yxflc11/openbot/releases/download/desktop-v0.1.0-alpha.8/SHA256SUMS). Updates are manual; automatic updates are not included.
+
 ## macOS installation
 
-1. Download the alpha.7 [Apple Silicon DMG](https://github.com/yxflc11/openbot/releases/download/desktop-v0.1.0-alpha.7/openbot-desktop-0.1.0-alpha.7-darwin-arm64.dmg) and check the release's SHA256SUMS.
+1. Download the alpha.8 [Apple Silicon DMG](https://github.com/yxflc11/openbot/releases/download/desktop-v0.1.0-alpha.8/openbot-desktop-0.1.0-alpha.8-darwin-arm64.dmg) and check the release's SHA256SUMS.
 2. Open the DMG and drag OpenBot into Applications. Quit OpenBot and back up your workspace before upgrading; retain the existing user data directory.
 3. Open OpenBot, create a local workspace or connect to an existing Server, then save your model provider, API key and model in Settings and enable the Agent.
 
@@ -18,7 +20,7 @@ This package supports Apple Silicon, not Intel Macs. It is ad-hoc signed, withou
 
 ## Windows
 
-1. Open [GitHub releases](https://github.com/yxflc11/openbot/releases) and select the current Windows x64 `.exe`. Check its filename and SHA-256 against the release's `SHA256SUMS`.
+1. Download the alpha.8 [Windows x64 installer](https://github.com/yxflc11/openbot/releases/download/desktop-v0.1.0-alpha.8/openbot-desktop-0.1.0-alpha.8-win32-x64.exe). Check its filename and SHA-256 against the release's `SHA256SUMS`.
 2. Run the per-user installer and open OpenBot from the Start menu. Administrator rights are not needed for the local Desktop workspace.
 3. Choose **As the Server computer** to keep the database and Server on this machine, or **Connect to a Server** for an existing deployment.
 4. On first use, OpenBot prepares its bundled PostgreSQL and local Server. No Docker or separately installed Node.js is required.
@@ -32,4 +34,4 @@ Normal launches reuse the saved installation, encrypted bootstrap identity, mode
 
 On macOS, opening the app for the first time or replacing an unsigned preview may prompt for access to the login keychain. Complete that request in the macOS system dialog; it asks for the keychain password, not your model API key. Saved model settings remain in the workspace. Normal restart verification does not guarantee that a different unsigned application build will avoid this prompt. See [Apple’s explanation of keychain access requests](https://support.apple.com/en-ie/guide/keychain-access/kyca1243/mac).
 
-The desktop client can also connect to a separately hosted Server over its reviewed URL. Localhost always means the Server machine for tools and plugins. See the [Windows engineering contract](https://github.com/yxflc11/openbot/blob/62440c1a09fdac624fe2078c130ff55d6ea4e24c/docs/WINDOWS_DESKTOP.md) for platform evidence and packaging details.
+The desktop client can also connect to a separately hosted Server over its reviewed URL. Localhost always means the Server machine for tools and plugins. See the [current Windows engineering notes](https://github.com/yxflc11/openbot/blob/main/docs/WINDOWS_DESKTOP.md) for platform evidence and packaging details. These notes follow `main` and may be newer than alpha.8; use the versioned release page and manifest above to identify the installer’s source.
